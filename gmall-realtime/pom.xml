@@ -89,6 +89,35 @@
             <artifactId>log4j-to-slf4j</artifactId>
             <version>2.14.0</version>
         </dependency>
+
+        <!--lomback插件依赖-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--commons-beanutils是Apache开源组织提供的用于操作JAVA BEAN的工具包。
+        使用commons-beanutils，我们可以很方便的对bean对象的属性进行操作-->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.3</version>
+        </dependency>
+
+        <!--Guava工程包含了若干被Google的Java项目广泛依赖的核心库,方便开发-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>29.0-jre</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+        </dependency>
+
     </dependencies>
 
     <build>
