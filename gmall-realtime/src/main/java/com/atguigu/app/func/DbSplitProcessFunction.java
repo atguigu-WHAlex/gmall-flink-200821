@@ -171,6 +171,64 @@ public class DbSplitProcessFunction extends ProcessFunction<JSONObject, JSONObje
 
     @Override
     public void processElement(JSONObject jsonObject, Context context, Collector<JSONObject> collector) throws Exception {
-        collector.collect(jsonObject);
+
+        //取出数据中的表名和操作类型
+        String table = jsonObject.getString("table");
+        String type = jsonObject.getString("type");
+
+        //使用MaxWell初始化功能时,数据的操作类型为"bootstrap-insert"
+        if ("bootstrap-insert".equals(type)) {
+            type = "insert";
+            jsonObject.put("type", type);
+        }
+
+        //拼接Key
+        String key = table + ":" + type;
+
+        //获取对应的tableProcess数据
+        TableProcess tableProcess = tableProcessHashMap.get(key);
+
+        //判断当前的配置信息是否存在
+        if (tableProcess != null) {
+
+            //向数据中追加sink_table信息
+            jsonObject.put("sink_table", tableProcess.getSinkTable());
+
+            //根据配置信息中提供的字段做数据过滤
+            filterColumn(jsonObject.getJSONObject("data"), tableProcess.getSinkColumns());
+
+            //判断当前数据应该写往HBASE还是Kafka
+            if (TableProcess.SINK_TYPE_KAFKA.equals(tableProcess.getSinkType())) {
+                //Kafka数据,将数据输出到主流
+                collector.collect(jsonObject);
+            } else if (TableProcess.SINK_TYPE_HBASE.equals(tableProcess.getSinkType())) {
+                //HBase数据,将数据输出到侧输出流
+                context.output(outputTag, jsonObject);
+            }
+
+        } else {
+            System.out.println("No Key " + key + " In Mysql!");
+        }
+
+    }
+
+    //根据配置信息中提供的字段做数据过滤
+    private void filterColumn(JSONObject data, String sinkColumns) {
+
+        //保留的数据字段
+        String[] fields = sinkColumns.split(",");
+        List<String> fieldList = Arrays.asList(fields);
+
+        Set<Map.Entry<String, Object>> entries = data.entrySet();
+
+//        while (iterator.hasNext()) {
+//            Map.Entry<String, Object> next = iterator.next();
+//            if (!fieldList.contains(next.getKey())) {
+//                iterator.remove();
+//            }
+//        }
+
+        entries.removeIf(next -> !fieldList.contains(next.getKey()));
+
     }
 }

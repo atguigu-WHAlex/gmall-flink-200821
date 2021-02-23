@@ -3,9 +3,11 @@ package com.atguigu.app.dwd;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.atguigu.app.func.DbSplitProcessFunction;
+import com.atguigu.app.func.DimSink;
 import com.atguigu.bean.TableProcess;
 import com.atguigu.utils.MyKafkaUtil;
 import org.apache.flink.api.common.functions.FilterFunction;
+import org.apache.flink.api.common.serialization.SerializationSchema;
 import org.apache.flink.runtime.state.filesystem.FsStateBackend;
 import org.apache.flink.streaming.api.CheckpointingMode;
 import org.apache.flink.streaming.api.datastream.DataStream;
@@ -13,7 +15,12 @@ import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
+import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer;
+import org.apache.flink.streaming.connectors.kafka.KafkaSerializationSchema;
 import org.apache.flink.util.OutputTag;
+import org.apache.kafka.clients.producer.ProducerRecord;
+
+import javax.annotation.Nullable;
 
 public class DbBaseApp {
 
@@ -52,13 +59,26 @@ public class DbBaseApp {
         OutputTag<JSONObject> hbaseTag = new OutputTag<JSONObject>(TableProcess.SINK_TYPE_HBASE) {
         };
         SingleOutputStreamOperator<JSONObject> kafkaJsonDS = filterDS.process(new DbSplitProcessFunction(hbaseTag));
+        DataStream<JSONObject> hbaseJsonDS = kafkaJsonDS.getSideOutput(hbaseTag);
+        //测试打印
+//        hbaseJsonDS.print("HBase>>>>>>>");
+//        kafkaJsonDS.print("Kafka>>>>>>>");
 
         //6.取出分流输出将数据写入Kafka或者Phoenix
-        DataStream<JSONObject> hbaseJsonDS = kafkaJsonDS.getSideOutput(hbaseTag);
+        hbaseJsonDS.addSink(new DimSink());
+        FlinkKafkaProducer<JSONObject> kafkaSinkBySchema = MyKafkaUtil.getKafkaSinkBySchema(new KafkaSerializationSchema<JSONObject>() {
+            @Override
+            public void open(SerializationSchema.InitializationContext context) throws Exception {
+                System.out.println("开始序列化Kafka数据！");
+            }
 
-        //测试打印
-        kafkaJsonDS.print();
-        hbaseJsonDS.print();
+            @Override
+            public ProducerRecord<byte[], byte[]> serialize(JSONObject element, @Nullable Long timestamp) {
+                return new ProducerRecord<byte[], byte[]>(element.getString("sink_table"),
+                        element.getString("data").getBytes());
+            }
+        });
+        kafkaJsonDS.addSink(kafkaSinkBySchema);
 
         //7.执行任务
         env.execute();
