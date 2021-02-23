@@ -2,14 +2,18 @@ package com.atguigu.app.dwd;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.atguigu.app.func.DbSplitProcessFunction;
+import com.atguigu.bean.TableProcess;
 import com.atguigu.utils.MyKafkaUtil;
 import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.runtime.state.filesystem.FsStateBackend;
 import org.apache.flink.streaming.api.CheckpointingMode;
+import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
+import org.apache.flink.util.OutputTag;
 
 public class DbBaseApp {
 
@@ -42,11 +46,19 @@ public class DbBaseApp {
         });
 
         //打印测试
-        filterDS.print();
+//        filterDS.print();
 
         //5.分流,ProcessFunction
+        OutputTag<JSONObject> hbaseTag = new OutputTag<JSONObject>(TableProcess.SINK_TYPE_HBASE) {
+        };
+        SingleOutputStreamOperator<JSONObject> kafkaJsonDS = filterDS.process(new DbSplitProcessFunction(hbaseTag));
 
         //6.取出分流输出将数据写入Kafka或者Phoenix
+        DataStream<JSONObject> hbaseJsonDS = kafkaJsonDS.getSideOutput(hbaseTag);
+
+        //测试打印
+        kafkaJsonDS.print();
+        hbaseJsonDS.print();
 
         //7.执行任务
         env.execute();
