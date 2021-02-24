@@ -128,6 +128,9 @@ public class LogBaseApp {
                 }, jsonObject.toString());
             } else {
 
+                //为页面数据,将数据输出到主流
+                collector.collect(jsonObject.toString());
+
                 //不是启动数据,继续判断是否是曝光数据
                 JSONArray displays = jsonObject.getJSONArray("displays");
                 if (displays != null && displays.size() > 0) {
@@ -142,10 +145,8 @@ public class LogBaseApp {
                         context.output(new OutputTag<String>("display") {
                         }, displayJson.toString());
                     }
-                } else {
-                    //为页面数据,将数据输出到主流
-                    collector.collect(jsonObject.toString());
                 }
+
             }
         }
     }
