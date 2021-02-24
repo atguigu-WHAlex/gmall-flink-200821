@@ -30,10 +30,10 @@ public class LogBaseApp {
         //为Kafka主题的分区数
         env.setParallelism(1);
         //1.1 设置状态后端
-        env.setStateBackend(new FsStateBackend("hdfs://hadoop102:8020/gmall/dwd_log/ck"));
-        //1.2 开启CK
-        env.enableCheckpointing(10000L, CheckpointingMode.EXACTLY_ONCE);
-        env.getCheckpointConfig().setCheckpointTimeout(60000L);
+//        env.setStateBackend(new FsStateBackend("hdfs://hadoop102:8020/gmall/dwd_log/ck"));
+//        //1.2 开启CK
+//        env.enableCheckpointing(10000L, CheckpointingMode.EXACTLY_ONCE);
+//        env.getCheckpointConfig().setCheckpointTimeout(60000L);
 
         //修改用户名
         System.setProperty("HADOOP_USER_NAME", "atguigu");

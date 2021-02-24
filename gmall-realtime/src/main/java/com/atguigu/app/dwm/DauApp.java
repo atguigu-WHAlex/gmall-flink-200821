@@ -20,6 +20,11 @@ import org.apache.flink.util.OutputTag;
 
 import java.text.SimpleDateFormat;
 
+/**
+ * 数据流：Mock(web/app) -> nginx -> SpringBoot -> Kafka -> FlinkApp(LogBaseApp) -> Kafka
+ *        FlinkApp(DauApp) -> Kafka
+ * 服务：  Nginx  Logger  ZK  Kafka  LogBaseApp  DauApp  消费者(dwm_unique_visit)  MockLog
+ */
 public class DauApp {
 
     public static void main(String[] args) throws Exception {
