@@ -2,6 +2,7 @@ package com.atguigu.app.func;
 
 import com.alibaba.fastjson.JSONObject;
 import com.atguigu.common.GmallConfig;
+import com.atguigu.utils.DimUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
@@ -41,17 +42,19 @@ public class DimSink extends RichSinkFunction<JSONObject> {
 
             //创建插入数据的SQL
             String upsertSql = genUpsertSql(tableName, keys, values);
-
             System.out.println(upsertSql);
-
             //编译SQL
             preparedStatement = connection.prepareStatement(upsertSql);
-
             //执行
             preparedStatement.executeUpdate();
-
             //提交
             connection.commit();
+
+            //判断如果是更新操作,则删除Redis中的数据保证数据的一致性
+            String type = jsonObject.getString("type");
+            if ("update".equals(type)) {
+                DimUtil.deleteCached(tableName, data.getString("id"));
+            }
 
         } catch (SQLException e) {
             e.printStackTrace();
