@@ -72,6 +72,7 @@ public class DimUtil {
         //将数据写入Redis
         jedis.set(redisKey.toString(), dimJsonObj.toString());
         jedis.expire(redisKey.toString(), 24 * 60 * 60);
+        jedis.close();
 
         //返回结果
         return dimJsonObj;
