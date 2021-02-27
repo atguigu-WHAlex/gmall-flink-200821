@@ -61,6 +61,7 @@ public class OrderWide {
             this.order_status = orderInfo.order_status;
             this.create_time = orderInfo.create_time;
             this.create_date = orderInfo.create_date;
+            this.create_hour = orderInfo.create_hour;
             this.activity_reduce_amount = orderInfo.activity_reduce_amount;
             this.coupon_reduce_amount = orderInfo.coupon_reduce_amount;
             this.original_total_amount = orderInfo.original_total_amount;
