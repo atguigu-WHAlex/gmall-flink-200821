@@ -80,6 +80,9 @@ public class DbBaseApp {
         });
         kafkaJsonDS.addSink(kafkaSinkBySchema);
 
+        hbaseJsonDS.print("HBase>>>>>>>>");
+        kafkaJsonDS.print("Kafka>>>>>>>>");
+
         //7.执行任务
         env.execute();
 

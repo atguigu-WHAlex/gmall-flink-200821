@@ -1,12 +1,15 @@
 package com.atguigu.app.dwm;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.atguigu.app.func.DimAsyncFunction;
 import com.atguigu.bean.OrderDetail;
 import com.atguigu.bean.OrderInfo;
 import com.atguigu.bean.OrderWide;
 import com.atguigu.utils.MyKafkaUtil;
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
+import org.apache.flink.streaming.api.datastream.AsyncDataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
@@ -16,7 +19,9 @@ import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
 import org.apache.flink.util.Collector;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Mock -> Mysql(binLog) -> MaxWell -> Kafka(ods_base_db_m) -> DbBaseApp(修改配置,Phoenix)
@@ -99,9 +104,44 @@ public class OrderWideApp {
                 });
 
         //测试打印
-        orderWideDS.print(">>>>>>>>>");
+//        orderWideDS.print(">>>>>>>>>");
 
         //5.关联维度
+        //5.1 关联用户维度
+        SingleOutputStreamOperator<OrderWide> orderWideWithUserDS = AsyncDataStream.unorderedWait(orderWideDS,
+                new DimAsyncFunction<OrderWide>("DIM_USER_INFO") {
+
+                    @Override
+                    public String getKey(OrderWide orderWide) {
+                        return orderWide.getUser_id().toString();
+                    }
+
+                    @Override
+                    public void join(OrderWide orderWide, JSONObject dimInfo) throws ParseException {
+
+                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+                        //取出用户维度中的生日
+                        String birthday = dimInfo.getString("BIRTHDAY");
+                        long currentTS = System.currentTimeMillis();
+                        Long ts = sdf.parse(birthday).getTime();
+
+                        //将生日字段处理成年纪
+                        Long ageLong = (currentTS - ts) / 1000L / 60 / 60 / 24 / 365;
+                        orderWide.setUser_age(ageLong.intValue());
+
+                        //取出用户维度中的性别
+                        String gender = dimInfo.getString("GENDER");
+                        orderWide.setUser_gender(gender);
+
+                    }
+                },
+                60,
+                TimeUnit.SECONDS);
+
+        orderWideWithUserDS.print();
+
+        //5.2 关联地区维度
 
         //6.写入数据到Kafka  dwm_order_wide
 
