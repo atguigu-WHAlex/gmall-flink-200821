@@ -116,6 +116,7 @@ public class UserJumpDetailApp {
         //8.将数据写入Kafka
         FlinkKafkaProducer<String> kafkaSink = MyKafkaUtil.getKafkaSink(sinkTopic);
         selectDS.getSideOutput(timeOutTag).addSink(kafkaSink);
+        selectDS.getSideOutput(timeOutTag).print(">>>>>>>>>>>");
 
         //9.执行任务
         env.execute();

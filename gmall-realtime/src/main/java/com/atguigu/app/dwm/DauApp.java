@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat;
 
 /**
  * 数据流：Mock(web/app) -> nginx -> SpringBoot -> Kafka -> FlinkApp(LogBaseApp) -> Kafka
- *        FlinkApp(DauApp) -> Kafka
+ * FlinkApp(DauApp) -> Kafka
  * 服务：  Nginx  Logger  ZK  Kafka  LogBaseApp  DauApp  消费者(dwm_unique_visit)  MockLog
  */
 public class DauApp {
@@ -67,6 +67,7 @@ public class DauApp {
         SingleOutputStreamOperator<JSONObject> filterDS = keyedStream.filter(new UvRichFilterFunction());
 
         //6.写入DWM层Kafka主题中
+        filterDS.print(">>>>>>>>>");
         filterDS.map(JSON::toString).addSink(MyKafkaUtil.getKafkaSink(sinkTopic));
 
         //7.启动任务
