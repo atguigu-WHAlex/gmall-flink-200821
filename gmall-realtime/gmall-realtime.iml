@@ -262,5 +262,11 @@
     <orderEntry type="library" name="Maven: org.codehaus.janino:commons-compiler:3.0.11" level="project" />
     <orderEntry type="library" name="Maven: org.apache.calcite.avatica:avatica-core:1.17.0" level="project" />
     <orderEntry type="library" name="Maven: org.reflections:reflections:0.9.10" level="project" />
+    <orderEntry type="library" name="Maven: com.janeluo:ikanalyzer:2012_u6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:4.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queryparser:4.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queries:4.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-sandbox:4.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers-common:4.7.2" level="project" />
   </component>
 </module>
