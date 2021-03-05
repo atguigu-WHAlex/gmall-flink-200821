@@ -30,7 +30,7 @@ public class OrderWide {
     BigDecimal split_total_amount;
 
     String expire_time;
-    String create_time;
+    String create_time; //yyyy-MM-dd HH:mm:ss
     String operate_time;
     String create_date; // 把其他字段处理得到
     String create_hour;

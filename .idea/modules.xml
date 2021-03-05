@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gmall-flink-200821.iml" filepath="$PROJECT_DIR$/gmall-flink-200821.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmall-logger/gmall-logger.iml" filepath="$PROJECT_DIR$/gmall-logger/gmall-logger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmall-realtime/gmall-realtime.iml" filepath="$PROJECT_DIR$/gmall-realtime/gmall-realtime.iml" />
+    </modules>
+  </component>
+</project>
