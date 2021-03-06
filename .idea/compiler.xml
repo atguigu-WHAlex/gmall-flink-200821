@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gmall-publisher" />
         <module name="gmall-realtime" />
         <module name="gmall-logger" />
       </profile>
@@ -14,6 +15,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="gmall-flink-200821" target="1.8" />
       <module name="gmall-logger" target="1.8" />
+      <module name="gmall-publisher" target="1.8" />
       <module name="gmall-realtime" target="1.8" />
     </bytecodeTargetLevel>
   </component>

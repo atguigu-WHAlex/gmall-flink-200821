@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfda72b4-7e6b-4900-8f46-cbdb0c74d13b" name="Default" comment="day11(上午)">
+    <list default="true" id="bfda72b4-7e6b-4900-8f46-cbdb0c74d13b" name="Default" comment="day11(下午)">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-realtime/gmall-realtime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-realtime/gmall-realtime.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-realtime/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-realtime/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/gmall-logger/target/" />
     <ignored path="$PROJECT_DIR$/gmall-realtime/target/" />
+    <ignored path="$PROJECT_DIR$/gmall-publisher/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,36 +25,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/utils/KeyWordUtil.java">
+        <entry file="file://$PROJECT_DIR$/gmall-publisher/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#1017#1018#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1440">
+              <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/func/KeyWordUDTF.java">
+        <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dws/KeyWordStatsApp.java">
+        <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/controller/SugarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="89" column="149" selection-start-line="89" selection-start-column="149" selection-end-line="89" selection-end-column="149" />
+            <state relative-caret-position="239">
+              <caret line="117" column="20" lean-forward="true" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,28 +55,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/utils/MyKafkaUtil.java">
+        <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/mapper/ProductMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dwd/LogBaseApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/bean/KeywordStats.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="173">
+              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,28 +67,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/common/GmallConstant.java">
+        <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/bean/ProductStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="63" column="55" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/.m2/repository/org/apache/flink/flink-table-api-java-bridge_2.12/1.12.0/flink-table-api-java-bridge_2.12-1.12.0-sources.jar!/org/apache/flink/table/api/bridge/java/StreamTableEnvironment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="162" column="13" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dws/ProvinceStatsApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
+            <state relative-caret-position="1176">
+              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,10 +79,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/.m2/repository/com/janeluo/ikanalyzer/2012_u6/ikanalyzer-2012_u6-sources.jar!/org/wltea/analyzer/core/IKSegmenter.java">
+        <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/service/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+            <state relative-caret-position="288">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/service/impl/ProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/GmallPublisherApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -147,7 +134,11 @@
       <find>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</find>
       <find>format</find>
       <find>format(</find>
+      <find>\n</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -193,6 +184,14 @@
         <option value="$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/func/KeyWordUDTF.java" />
         <option value="$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/bean/KeywordStats.java" />
         <option value="$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dws/KeyWordStatsApp.java" />
+        <option value="$PROJECT_DIR$/gmall-publisher/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-publisher/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/GmallPublisherApplication.java" />
+        <option value="$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/bean/ProductStats.java" />
+        <option value="$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/mapper/ProductMapper.java" />
+        <option value="$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/controller/SugarController.java" />
       </list>
     </option>
   </component>
@@ -229,10 +228,10 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1384" />
-    <option name="height" value="745" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -259,7 +258,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,105 +268,102 @@
             <path>
               <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
               <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
               <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
               <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
               <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="atguigu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
               <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="atguigu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="gmallpublisher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
               <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="atguigu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dwd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="atguigu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dws" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="atguigu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="func" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="atguigu" type="462c0819:PsiDirectoryNode" />
+              <item name="gmallpublisher" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
               <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-realtime" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="atguigu" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="gmallpublisher" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gmallpublisher" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gmallpublisher" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gmallpublisher" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gmall-flink-200821" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gmall-flink-200821" type="462c0819:PsiDirectoryNode" />
+              <item name="gmall-publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,7 +377,7 @@
     <property name="SearchEverywhereHistoryKey" value="LRUCa&#9;PSI&#9;JAVA://com.mysql.jdbc.util.LRUCache&#10;HRegi&#9;PSI&#9;JAVA://org.apache.hadoop.hbase.regionserver.HRegion&#10;Region&#9;PSI&#9;JAVA://org.apache.hadoop.hbase.regionserver.Region" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gmall-200821" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -400,7 +395,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KeyWordStatsApp">
+  <component name="RunManager" selected="Spring Boot.GmallPublisherApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -497,6 +492,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GmallPublisherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gmall-publisher" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmallpublisher.GmallPublisherApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -517,11 +519,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.OrderWideApp" />
-      <item itemvalue="Spring Boot.GmallLoggerApplication" />
       <item itemvalue="Application.ProvinceStatsApp" />
       <item itemvalue="Application.KeyWordUtil" />
       <item itemvalue="Application.LogBaseApp" />
       <item itemvalue="Application.KeyWordStatsApp" />
+      <item itemvalue="Spring Boot.GmallLoggerApplication" />
+      <item itemvalue="Spring Boot.GmallPublisherApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -563,7 +566,9 @@
       <workItem from="1614870887293" duration="438000" />
       <workItem from="1614871360549" duration="170000" />
       <workItem from="1614904736395" duration="3751000" />
-      <workItem from="1614909216184" duration="16702000" />
+      <workItem from="1614909216184" duration="16988000" />
+      <workItem from="1614953303671" duration="1670000" />
+      <workItem from="1614991182853" duration="6721000" />
     </task>
     <task id="LOCAL-00001" summary="day01">
       <created>1612512728270</created>
@@ -663,16 +668,24 @@
       <option name="project" value="LOCAL" />
       <updated>1614925504340</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="day11(下午)">
+      <created>1614934864228</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614934864228</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110272000" />
+    <option name="totallyTimeSpent" value="118949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3214826" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
       <window_info id="Structure" order="1" weight="0.35627836" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -682,7 +695,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.9508197" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.2852459" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -727,56 +740,10 @@
     <MESSAGE value="day07(上午 2)" />
     <MESSAGE value="day07(下午)" />
     <MESSAGE value="day11(上午)" />
-    <option name="LAST_COMMIT_MESSAGE" value="day11(上午)" />
+    <MESSAGE value="day11(下午)" />
+    <option name="LAST_COMMIT_MESSAGE" value="day11(下午)" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.68/fastjson-1.2.68.jar!/com/alibaba/fastjson/JSON.class" />
-    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dwm/UserJumpDetailApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/bean/OrderInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="imports" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-logger/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="12" column="93" lean-forward="true" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dwm/DauApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="51" column="117" selection-start-line="51" selection-start-column="117" selection-end-line="51" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/utils/MySQLUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="26" column="103" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Develop/Java8/src.zip!/java/sql/DriverManager.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar!/com/mysql/jdbc/util/LRUCache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/utils/PhoenixUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -967,10 +934,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/.m2/repository/com/janeluo/ikanalyzer/2012_u6/ikanalyzer-2012_u6-sources.jar!/org/wltea/analyzer/core/IKSegmenter.java">
+    <entry file="jar://D:/.m2/repository/org/apache/flink/flink-table-api-java-bridge_2.12/1.12.0/flink-table-api-java-bridge_2.12-1.12.0.jar!/org/apache/flink/table/api/bridge/java/StreamTableEnvironment.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+        <state relative-caret-position="193">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -980,15 +947,13 @@
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/func/KeyWordUDTF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
+        <state relative-caret-position="48">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -996,9 +961,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/utils/MyKafkaUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dwd/LogBaseApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/bean/KeywordStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" selection-start-line="12" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/common/GmallConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="63" column="55" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/org/apache/flink/flink-table-api-java-bridge_2.12/1.12.0/flink-table-api-java-bridge_2.12-1.12.0-sources.jar!/org/apache/flink/table/api/bridge/java/StreamTableEnvironment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3096">
+          <caret line="162" column="13" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dws/ProvinceStatsApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="1032">
           <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1006,55 +1009,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/.m2/repository/org/apache/flink/flink-table-api-java-bridge_2.12/1.12.0/flink-table-api-java-bridge_2.12-1.12.0.jar!/org/apache/flink/table/api/bridge/java/StreamTableEnvironment.class">
+    <entry file="jar://D:/.m2/repository/com/janeluo/ikanalyzer/2012_u6/ikanalyzer-2012_u6-sources.jar!/org/wltea/analyzer/core/IKSegmenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="648">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/.m2/repository/org/apache/flink/flink-table-api-java-bridge_2.12/1.12.0/flink-table-api-java-bridge_2.12-1.12.0-sources.jar!/org/apache/flink/table/api/bridge/java/StreamTableEnvironment.java">
+    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dws/KeyWordStatsApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="162" column="13" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/common/GmallConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="63" column="55" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dwd/LogBaseApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/utils/MyKafkaUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/bean/KeywordStats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="792">
+          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-realtime/src/main/java/com/atguigu/app/dws/KeyWordStatsApp.java">
+    <entry file="file://$PROJECT_DIR$/gmall-publisher/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="89" column="149" selection-start-line="89" selection-start-column="149" selection-end-line="89" selection-end-column="149" />
+        <state relative-caret-position="1440">
+          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/GmallPublisherApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/mapper/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/bean/ProductStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-publisher/src/main/java/com/atguigu/gmallpublisher/controller/SugarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="117" column="20" lean-forward="true" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
