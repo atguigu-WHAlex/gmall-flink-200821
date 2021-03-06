@@ -251,7 +251,7 @@ public class ProductStatsApp {
 
         //6.分组、开窗、聚合
         SingleOutputStreamOperator<ProductStats> reduceDS = productStatsWithWaterMarkDS.keyBy(ProductStats::getSku_id)
-                .window(TumblingEventTimeWindows.of(Time.seconds(10)))
+                .window(TumblingEventTimeWindows.of(Time.seconds(2)))
                 .reduce(new ReduceFunction<ProductStats>() {
                     @Override
                     public ProductStats reduce(ProductStats stats1, ProductStats stats2) throws Exception {

@@ -56,8 +56,8 @@ public class ProvinceStatsApp {
 
         //3.分组、开窗、聚合
         Table reduceTable = tableEnv.sqlQuery("select" +
-                "    DATE_FORMAT(TUMBLE_START(rowtime, INTERVAL '10' SECOND),'yyyy-MM-dd HH:mm:ss') as stt," +
-                "    DATE_FORMAT(TUMBLE_END(rowtime, INTERVAL '10' SECOND),'yyyy-MM-dd HH:mm:ss') as edt," +
+                "    DATE_FORMAT(TUMBLE_START(rowtime, INTERVAL '2' SECOND),'yyyy-MM-dd HH:mm:ss') as stt," +
+                "    DATE_FORMAT(TUMBLE_END(rowtime, INTERVAL '2' SECOND),'yyyy-MM-dd HH:mm:ss') as edt," +
                 "    province_id," +
                 "    province_name," +
                 "    province_area_code," +
@@ -67,7 +67,7 @@ public class ProvinceStatsApp {
                 "    count(*) order_count," +
                 "    UNIX_TIMESTAMP()*1000 ts " +
                 "from ORDER_WIDE " +
-                "group by province_id,province_name,province_area_code,province_iso_code,province_3166_2_code,TUMBLE(rowtime, INTERVAL '10' SECOND)");
+                "group by province_id,province_name,province_area_code,province_iso_code,province_3166_2_code,TUMBLE(rowtime, INTERVAL '2' SECOND)");
 
         //4.将动态表转换为追加流
         DataStream<ProvinceStats> rowDataStream = tableEnv.toAppendStream(reduceTable, ProvinceStats.class);

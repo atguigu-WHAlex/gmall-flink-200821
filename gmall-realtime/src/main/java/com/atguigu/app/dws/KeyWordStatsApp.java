@@ -77,10 +77,10 @@ public class KeyWordStatsApp {
         Table resultTable = tableEnv.sqlQuery("select keyword," +
                 "count(*) ct, '"
                 + GmallConstant.KEYWORD_SEARCH + "' source ," +
-                "DATE_FORMAT(TUMBLE_START(rowtime, INTERVAL '10' SECOND),'yyyy-MM-dd HH:mm:ss') stt," +
-                "DATE_FORMAT(TUMBLE_END(rowtime, INTERVAL '10' SECOND),'yyyy-MM-dd HH:mm:ss') edt," +
+                "DATE_FORMAT(TUMBLE_START(rowtime, INTERVAL '2' SECOND),'yyyy-MM-dd HH:mm:ss') stt," +
+                "DATE_FORMAT(TUMBLE_END(rowtime, INTERVAL '2' SECOND),'yyyy-MM-dd HH:mm:ss') edt," +
                 "UNIX_TIMESTAMP()*1000 ts from " + analyzeWordTable
-                + " GROUP BY TUMBLE(rowtime, INTERVAL '10' SECOND ),keyword"
+                + " GROUP BY TUMBLE(rowtime, INTERVAL '2' SECOND ),keyword"
         );
 
         DataStream<KeywordStats> keywordStatsDataStream = tableEnv.toAppendStream(resultTable, KeywordStats.class);
